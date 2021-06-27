@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@media (max-width: 1107px){
+}
+
+p {
+	font-family: Andale Mono, monospace;
+	text-align: center;
+}
+
+.thanks {
+	font-size: 60px;
+}
+	
+
+div p {
+	font-size: 40px;
+	display: inline;
+	float:left;
+}
+
+.row {
+	border: solid lightgray;
+	height: 70px;
+	width: 500px;
+	margin: 2% auto;
+	border-radius: 25px;
+}
+
+.column p{
+	margin: 13px auto;
+}
+
+#first {
+	margin-left: 37px;
+}
+
+#popito {
+	width: 40px;
+}
+
+#business {
+	margin: 0 auto; 
+	width: 400px;
+	display: block;
+}
+

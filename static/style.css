@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@media (max-width : 1076px ){
+}
+
+h1 {
+	font-family: Andale Mono, monospace;
+	font-size: 40px;
+    text-align: center;
+	padding-bottom: 2%;
+	
+}
+
+body {
+	margin: 2em 40px; 
+}
+
+table {
+	width: 100%;
+ 	border: 4px solid grey;
+	padding-botom: 2%;
+}
+
+td {
+	border: 4px solid grey;
+}
+
+img {
+	display: block;
+    margin: 0 auto; 
+}
+
+.grayscale { filter: grayscale(75%); }
+
+.column {
+	float: left;
+	width: 33.33%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+input[type="button"].interaction {
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+}
+
+input[type="button"].add {
+	background: url('/static/button_add.png') no-repeat top;
+	background-size: contain;
+}
+
+input[type="button"].check {
+	background: url('button_check.png') no-repeat top;
+	background-size: contain;
+	transform: rotate(-90deg);
+}
+
+input[type="button"].cross {
+	background: url('button_cross.png') no-repeat top;
+	background-size: contain;
+}
+
+input[type="image"] {
+	width: 200px;
+}
+
+#field {
+    font-size: 30px;
+    padding-left: 45%;
+}

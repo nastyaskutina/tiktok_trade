@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>oh ok</title>
+<link href="/static/decline.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1><i>Ничего. В другой раз...</i></h1>
+	<div class="video_container">
+		<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@{{ info['author_name'] }}/video/{{ info['tiktok_id'] }}" data-video-id="{{ info['tiktok_id'] }}" style="max-width: 605px;min-width: 325px;" >
+            <section>
+                <a target="_blank" title="@{{ info['author_name'] }}" href="https://www.tiktok.com/@{{ info['author_name'] }}">@{{ info['author_name'] }}</a>
+            </section>
+        </blockquote>
+	</div>
+	<script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+<footer>
+    <a href="/" class="again"><p>Начнём сначала? &#128073;&#128072;</p></a>
+</footer>
+</html>

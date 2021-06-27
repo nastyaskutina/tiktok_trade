@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	
+<head>
+	<meta charset="UTF-8">
+	<title>let's trade!</title>
+	<link href="/static/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Что ты мне дашь за этот <strong>POP IT?</strong></h1>
+	<table>
+		<tr>
+			<td width = "25%"><img src="/static/button_check.png" alt="Согласна" width="200px" style="transform:rotate(90deg)" class="grayscale"></td>
+			<td rowspan="3">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@{{ info['author_name'] }}/video/{{ info['tiktok_id'] }}" data-video-id="{{ info['tiktok_id'] }}" style="max-width: 605px;min-width: 325px;" >
+                    <section>
+                        <a target="_blank" title="@{{ info['author_name'] }}" href="https://www.tiktok.com/@{{ info['author_name'] }}">@{{ info['author_name'] }}</a>
+                    </section>
+                </blockquote>
+            </td>
+            <td width = "25%"><a href="decline"><input type="button" title="Отмена" class="interaction cross" /></a></td>
+		</tr>
+		<tr>
+			<td><img src="/static/button_add.png" alt="Добавляй" width="200px" class="grayscale"></td>
+			<td><input type="button" title="Добавляй" class="interaction add" onClick='parent.location="javascript:location.reload()"'/></td>
+		</tr>
+		<tr>
+			<td><img src="/static/button_cross.png" alt="Отмена" width="200px" class="grayscale"></td>
+            <td><a href="agree"><input type="button" title="Согласна" class="interaction check" /></a></td>
+		</tr>
+	</table>
+    <span id="field"></span>
+	<div class="row">
+        <div class="column"><input type="image" src="static/tier{{ tier[0] }}_img_{{ img[0] }}.jpeg" id="{{ tradability[0] }}" title="this one" alt="first pop it" /></div>
+        <div class="column"><input type="image" src="static/tier{{ tier[1] }}_img_{{ img[1] }}.jpeg" id="{{ tradability[1] }}" title="this one" alt="second pop it" /></div>
+        <div class="column"><input type="image" src="static/tier{{ tier[2] }}_img_{{ img[2] }}.jpeg" id="{{ tradability[2] }}" title="this one" alt="third pop it" /></div>
+    </div>
+<script src="/static/game.js"></script>
+<script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>

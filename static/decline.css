@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media (max-width: 1107px){
+}
+
+h1 {
+	font-family: Andale Mono, monospace;
+	font-size: 40px;
+    text-align: center;
+	padding-bottom: 2%;	
+}
+
+body {
+	background-image: url("rain.gif");
+	background-size: 110%;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: 0px 100px;
+}
+
+.video_container {
+	margin: 0 auto;
+	width: 60%;
+	height: auto;
+	padding: 10%;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+    width: 30%;
+	height: 40px;
+	text-align: center;
+}
+
+footer p {
+	background-image: url("button.png");
+	background-size: 100% 100%;
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+a.again {
+	color: #ffffff;
+	text-decoration: none;
+}
